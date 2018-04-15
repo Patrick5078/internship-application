@@ -29,9 +29,13 @@
         </div>
         <div id="languageContainer">
             <p id="chooseLanguage"></p>
+            <div>
+                <img id="flagEnglish" class="flag" src="assets/images/englishFlag.png">
+                <img id="flagDanish" class="flag" src="assets/images/danishFlag.png">
+            </div>
         </div>
         <div id="descriptionContainer">
-
+        
         </div>
         <div id="qualificationsContainer">
             <div id="leftContainer">
@@ -54,7 +58,7 @@
                 </div>
             </div>
             <div id="rightContainer">
-
+            
             </div>
         </div>
     </div>
@@ -68,7 +72,6 @@
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     globalLanguage = JSON.parse(this.responseText)
-
                     // Writing the JSON strings to the DOM by matching key name and elem id name
                     var elems = document.body.getElementsByTagName("*");
                     for (var i = 0; i < elems.length; i++) {
@@ -98,6 +101,15 @@
         else {
             getAndApplyLanguage("english")
         }
+
+
+        flagEnglish.addEventListener("click", function() {
+            getAndApplyLanguage('english')
+        })
+
+        flagDanish.addEventListener("click" , function() {
+            getAndApplyLanguage('danish')
+        })
 
     </script>
 

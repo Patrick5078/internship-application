@@ -54,6 +54,11 @@ h1 {
   border-radius: 5px;
   margin: 0px 3px 0px 0px; }
 
+.flag {
+  width: 40px;
+  height: 40px;
+  margin: 0px 5px; }
+
 .skillSection {
   display: flex;
   margin: 10px 0;
@@ -61,10 +66,16 @@ h1 {
 
 .skillSectionWrapper {
   border-style: solid;
-  border-width: 2px 0px;
+  border-width: 2px 0px 2px 0px;
   border-color: rgba(66, 103, 178, 0.5); }
 
 .minorHeadline {
   font-weight: bold; }
+
+#languageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
