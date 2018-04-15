@@ -17,23 +17,44 @@
 <body>
 
     <div id="mainContainer">
-        <div id="left-container">
-            Test
+        <div id="leftContainer">
+            <img src="https://png.pngtree.com/element_pic/00/16/07/155788a15798b81.jpg">
+            <h1 id="headline"></h1>
+
         </div>
         <div id="rightContainer">
-            <h1> Looking for internship </h1>
         </div>
     </div>
 
     <script>
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                console.log(this.responseText)
-            }
-        };
-        xhttp.open("GET", "languages/english.json", true);
-        xhttp.send();
+        // Global variable to set language
+        var globalLanguage;
+
+        function getAndApplyLanguage(language) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    globalLanguage = JSON.parse(this.responseText)
+                    console.log(globalLanguage)
+                    
+                    // Writing the JSON strings to the DOM
+                    headline.innerHTML = globalLanguage.headline
+                }
+            };
+            xhttp.open("GET", "languages/" + language + ".json", true);
+            xhttp.send();
+        }
+
+        // Bit of a weird way to get the language param, but github does not support server side code.
+        var urlLanguageParam = window.location.href.split("?")[1].split("=")[1]
+        console.log(urlLanguageParam)
+        if (urlLanguageParam == 'dk') {
+            getAndApplyLanguage('danish')
+        }
+        else {
+            getAndApplyLanguage('english')
+        }
+
 
 
     </script>

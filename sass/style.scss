@@ -4,11 +4,12 @@ $defaultFont: helvetica;
 $headLineFontSize: 30px;
 
 #mainContainer {
+    display: flex;
     max-width: 1200px;
     margin:auto;
 }
 
 body {
-    background-color: black;
+    background-color: $greyColor;
 }
 

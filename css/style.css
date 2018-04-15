@@ -1,8 +1,9 @@
 #mainContainer {
+  display: flex;
   max-width: 1200px;
   margin: auto; }
 
 body {
-  background-color: black; }
+  background-color: #F5F5F5; }
 
 /*# sourceMappingURL=style.css.map */
