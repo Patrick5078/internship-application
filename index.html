@@ -17,12 +17,45 @@
 <body>
 
     <div id="mainContainer">
-        <div id="leftContainer">
-            <img src="https://png.pngtree.com/element_pic/00/16/07/155788a15798b81.jpg">
-            <h1 id="headline"></h1>
+        <div id="headerContainer">
+            <div id="imageContainer">
+                <img src="https://png.pngtree.com/element_pic/00/16/07/155788a15798b81.jpg">
+            </div>
+            <div id="headerHeadlines">
+                <h1> Patrick Brix </h1>
+                <p id="studying"></p>
+                <p id="lookingForInternship"></p>
+            </div>
+        </div>
+        <div id="languageContainer">
+            <p id="chooseLanguage"></p>
+        </div>
+        <div id="descriptionContainer">
 
         </div>
-        <div id="rightContainer">
+        <div id="qualificationsContainer">
+            <div id="leftContainer">
+                <div id="skillBox">
+                    <div class="skillSectionWrapper">
+                        <p id="bestSkillHeadline" class="minorHeadline"></p>
+                        <div id="bestSkillBox" class="skillSection">
+                            <p class="skill">Javascript</p>
+                            <p class="skill">CSS / SASS</p>
+                            <p class="skill">PHP</p>
+                            <p class="skill">HTML</p>
+                        </div>
+                    </div>
+                    <p id="secondarySkillHeadline" class="minorHeadline"></p>
+                    <div id="secondarySkillBox" class="skillSection">
+                    </div>
+                    <p id="someExperienceHeadline" class="minorHeadline"></p>
+                    <div id="someExperienceBox" class="skillSection">
+                    </div>
+                </div>
+            </div>
+            <div id="rightContainer">
+
+            </div>
         </div>
     </div>
 
@@ -35,27 +68,36 @@
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     globalLanguage = JSON.parse(this.responseText)
-                    console.log(globalLanguage)
-                    
-                    // Writing the JSON strings to the DOM
-                    headline.innerHTML = globalLanguage.headline
+
+                    // Writing the JSON strings to the DOM by matching key name and elem id name
+                    var elems = document.body.getElementsByTagName("*");
+                    for (var i = 0; i < elems.length; i++) {
+                        if (globalLanguage[elems[i].id]) {
+                            elems[i].innerHTML = globalLanguage[elems[i].id]
+                        }
+                    }
                 }
             };
             xhttp.open("GET", "languages/" + language + ".json", true);
             xhttp.send();
         }
 
+
         // Bit of a weird way to get the language param, but github does not support server side code.
-        var urlLanguageParam = window.location.href.split("?")[1].split("=")[1]
-        console.log(urlLanguageParam)
-        if (urlLanguageParam == 'dk') {
-            getAndApplyLanguage('danish')
+        var url = window.location.href
+        if (url.includes("?")) {
+            var urlLanguageParam = url.split("?")[1].split("=")[1]
+            console.log(urlLanguageParam)
+            if (urlLanguageParam == "dk") {
+                getAndApplyLanguage("danish")
+            }
+            else {
+                getAndApplyLanguage("english")
+            }
         }
         else {
-            getAndApplyLanguage('english')
+            getAndApplyLanguage("english")
         }
-
-
 
     </script>
 
