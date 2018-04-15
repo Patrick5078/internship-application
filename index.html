@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>test</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--  -->
+
 </head>
+
 <body>
-    
+
+    <div id="mainContainer">
+        <div id="left-container">
+            Test
+        </div>
+        <div id="rightContainer">
+            <h1> Looking for internship </h1>
+        </div>
+    </div>
+
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                console.log(this.responseText)
+            }
+        };
+        xhttp.open("GET", "languages/language.json", true);
+        xhttp.send();
+
+
+    </script>
+
 </body>
+
 </html>
