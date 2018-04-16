@@ -10,5 +10,8 @@
     "phone" : "Phone",
     "bestSkillHeadline" : "Skilled",
     "secondarySkillHeadline" : "Familiar",
-    "someExperienceHeadline" : "Some experience"
+    "someExperienceHeadline" : "Some experience",
+    "webDevelopmentEducation": "",
+    "multimediaDesignEducation" : "r",
+    "proGamer": "f"
 }

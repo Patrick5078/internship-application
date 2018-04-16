@@ -38,7 +38,7 @@
                 <p id="descriptionP2" class="descriptionP"></p>
                 <p id="descriptionP3" class="descriptionP"></p>
                 <p id="descriptionP4" class="descriptionP"></p>
-                
+
             </div>
             <div id="linksSection">
                 <div id="links">
@@ -46,9 +46,9 @@
                     <a target="blank" href="https://www.linkedin.com/in/patrick-brix-101945127/">Linkedin profile</a>
                     <a target="blank" href="https://github.com/Patrick5078">Github account</a>
                     <p class="minorHeadline"> Email </p>
-                    <p>brix.bjerg@gmail.com</p>                
+                    <p>brix.bjerg@gmail.com</p>
                     <p class="minorHeadline" id="phone"></p>
-                    <p style="margin: 0; padding: 0;">29857099</p>                
+                    <p style="margin: 0; padding: 0;">29857099</p>
                 </div>
             </div>
         </div>
@@ -89,7 +89,14 @@
                 </div>
             </div>
             <div id="rightContainer">
-
+                <div id="timeline">
+                    <p id="date"></p>
+                </div>
+                <div id="timelineDescription">
+                    <p id="webDevelopmentEducation"></p>
+                    <p id="multimediaDesignEducation"></p>
+                    <p id="proGamer"></p>
+                </div>
             </div>
         </div>
     </div>
@@ -105,6 +112,12 @@
                     globalLanguage = JSON.parse(this.responseText)
                     // Writing the JSON strings to the DOM by matching key name and elem id name
                     var elems = document.body.getElementsByTagName("*");
+                    var date = new Date
+                    console.log(date)
+                    var dateArray = date.split(" ");
+                    var currentDate = dateArray[1] + dateArray[2] + dateArray[3]; 
+                    
+                    date.innerHTML = currentDate;
                     for (var i = 0; i < elems.length; i++) {
                         if (globalLanguage[elems[i].id]) {
                             elems[i].innerHTML = globalLanguage[elems[i].id]
@@ -117,7 +130,7 @@
         }
 
         // Bit of a weird way to get the language param, but github does not support server side code.
-        
+
         var url = window.location.href
         if (url.includes("?")) {
             var urlLanguageParam = url.split("?")[1].split("=")[1]
@@ -135,16 +148,14 @@
         flagEnglish.addEventListener("click", function () {
             getAndApplyLanguage("english")
             var baseUrl = window.location.href.split('?')[0]
-            history.replaceState({}, null, baseUrl+'?lang=en')
+            history.replaceState({}, null, baseUrl + '?lang=en')
         })
 
         flagDanish.addEventListener("click", function () {
             getAndApplyLanguage('danish')
             var baseUrl = window.location.href.split('?')[0]
-            history.replaceState({}, null, baseUrl+'?lang=dk')
+            history.replaceState({}, null, baseUrl + '?lang=dk')
         })
-
-
 
     </script>
 </body>
