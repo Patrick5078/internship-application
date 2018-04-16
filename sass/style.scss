@@ -147,3 +147,20 @@ a {
     display:flex;
     flex-direction: column;
 }
+
+.descriptionP {
+    text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+    #headerContainer {
+        flex-direction: column;
+    }
+
+    #descriptionContainer {
+        flex-direction: column;
+    }
+    #linksSection {
+        align-items: flex-start;
+    }
+}

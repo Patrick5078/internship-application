@@ -1,14 +1,14 @@
 {
-    "studying" : "Web Development student at KEA",
-    "lookingForInternship": "Looking for internship in the period 20 August - 26 October, 2018.",
-    "chooseLanguage" : "Change language",
-    "descriptionHeadline": "Web developer looking for an internship",
-    "descriptionP1": "dansk As part of my bachelor in web development, i have to undergo an internship spanning 10 weeks. During this time, i hope to contribute to your company’s success, and learn a lot in the progress.",
-    "descriptionP2": "When it comes to what i like working with, i enjoy full-stack projects the most, or at least something that makes my work varied. I really like coding and solving problems with logic, i can use site-builders like wordpress as well, but if i only have to drag and drop and write no code i might go crazy.",
-    "descriptionP3": "I have also previously taken an education in multimedia design, so i have a lot of experience working with web design and UX. Although this should not be a big part of the internship.",
-    "descriptionP4": "If you think i would be good fit for your company, or you just want to talk to me further, please send me a mail or message me on linkedin, and thank you for reading :).",
-    "phone" : "Phone",
-    "bestSkillHeadline" : "Very confident",
-    "secondarySkillHeadline" : "Familiar",
-    "someExperienceHeadline" : "Some experience"
+    "studying" : "Webudviklings student på KEA",
+    "lookingForInternship": "Søger en praktikplads i perioden: 20 August - 26 October, 2018.",
+    "chooseLanguage" : "Skift sprog",
+    "descriptionHeadline": "Webudvikler søger praktikplads",
+    "descriptionP1": "Som en del af min bachelor i webudvikling skal jeg i praktik. I løbet af min praktikperiode håber jeg, at jeg kan bidrage en masse til jeres firma, og lære en masse i processen.",
+    "descriptionP2": "Når det kommer til hvad jeg godt kan lide at arbejde med, foretrækker jeg full-stack projekter, eller i hvert fald arbejde hvor opgaverne er varierede. Jeg elsker at kode og løse problemer med logic, jeg kan også bruge et CMS, men hvis der er for mange opgaver hvor man skal drag & drop, begynder jeg hurtigt at kede mig.",
+    "descriptionP3": "Jeg har også førhen taget en uddannelse i multimediedesign, så jeg har meget erfaring indenfor web design og UX, Selvom dette ikke skal være fokus for denne praktikperiode.",
+    "descriptionP4": "Hvis i tror jeg vil passe godt til jeres firma, eller i ønsker at snakke yderligere, så send venligst en mail eller skriv til mig på linkedin. Tak for opmærksomheden :)",
+    "phone" : "Telefon",
+    "bestSkillHeadline" : "Erfaren",
+    "secondarySkillHeadline" : "Bekendt",
+    "someExperienceHeadline" : "Lidt erfaring"
 }
