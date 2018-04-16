@@ -102,6 +102,7 @@
     </div>
 
     <script>
+
         // Global variable to set language
         var globalLanguage;
 
@@ -110,14 +111,12 @@
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     globalLanguage = JSON.parse(this.responseText)
-                    // Writing the JSON strings to the DOM by matching key name and elem id name
                     var elems = document.body.getElementsByTagName("*");
                     var date = new Date
-                    console.log(date)
-                    var dateArray = date.split(" ");
-                    var currentDate = dateArray[1] + dateArray[2] + dateArray[3]; 
-                    
-                    date.innerHTML = currentDate;
+                    var currentDate = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear()
+                    var dateP = document.getElementById('date');
+                    dateP.innerHTML = currentDate;
+                    // Writing the JSON strings to the DOM by matching key name and elem id name
                     for (var i = 0; i < elems.length; i++) {
                         if (globalLanguage[elems[i].id]) {
                             elems[i].innerHTML = globalLanguage[elems[i].id]

@@ -65,12 +65,10 @@ a {
 }
 
 #leftContainer {
-    border-right: 2px solid $mainColor;
     flex-basis: 100%;
 }
 
 #rightContainer {
-    border: 2px solid black;
     flex-basis: 100%;
     
 }
@@ -114,7 +112,6 @@ a {
 }
 
 .skillSectionWrapper {
-    @include applySeparationLine(2px, 0px, 2px, 0px);
 }
 
 .minorHeadline {
@@ -130,6 +127,7 @@ a {
 
 #descriptionContainer {
     display: flex;
+    @include applySeparationLine(0px, 0px, 2px, 0px)
 }
 
 #description {
