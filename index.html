@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>test</title>
+    <title>Internship application</title>
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!--  -->
-
 </head>
 
 <body>
@@ -22,20 +21,36 @@
                 <img src="https://png.pngtree.com/element_pic/00/16/07/155788a15798b81.jpg">
             </div>
             <div id="headerHeadlines">
-                <h1> Patrick Brix </h1>
+                <h1> Patrick Brix Bjerg </h1>
                 <p id="studying"></p>
                 <p id="lookingForInternship"></p>
-            </div>
-        </div>
-        <div id="languageContainer">
-            <p id="chooseLanguage"></p>
-            <div>
-                <img id="flagEnglish" class="flag" src="assets/images/englishFlag.png">
-                <img id="flagDanish" class="flag" src="assets/images/danishFlag.png">
+                <p id="chooseLanguage"></p>
+                <div>
+                    <img id="flagEnglish" class="flag" src="assets/images/englishFlag.png">
+                    <img id="flagDanish" class="flag" src="assets/images/danishFlag.png">
+                </div>
             </div>
         </div>
         <div id="descriptionContainer">
-        
+            <div id="description">
+                <h2 id="descriptionHeadline"></h2>
+                <p id="descriptionP1"></p>
+                <p id="descriptionP2"></p>
+                <p id="descriptionP3"></p>
+                <p id="descriptionP4"></p>
+                
+            </div>
+            <div id="linksSection">
+                <div id="links">
+                    <p class="minorHeadline"> Links </p>
+                    <a target="blank" href="https://www.linkedin.com/in/patrick-brix-101945127/">Linkedin profile</a>
+                    <a target="blank" href="https://www.linkedin.com/in/patrick-brix-101945127/">Github account</a>
+                    <p class="minorHeadline"> Email </p>
+                    <a target="blank" href="https://www.linkedin.com/in/patrick-brix-101945127/">brix.bjerg@gmail.com</a>                
+                    <p class="minorHeadline" id="phone"></p>
+                    <p style="margin: 0; padding: 0;">29857099</p>                
+                </div>
+            </div>
         </div>
         <div id="qualificationsContainer">
             <div id="leftContainer">
@@ -46,19 +61,35 @@
                             <p class="skill">Javascript</p>
                             <p class="skill">CSS / SASS</p>
                             <p class="skill">PHP</p>
+                            <p class="skill">mySQL</p>
                             <p class="skill">HTML</p>
+                            <p class="skill">Ajax</p>
+                            <p class="skill">Photoshop</p>
                         </div>
                     </div>
                     <p id="secondarySkillHeadline" class="minorHeadline"></p>
                     <div id="secondarySkillBox" class="skillSection">
+                        <p class="skill">Node.js</p>
+                        <p class="skill">React.js</p>
+                        <p class="skill">Web application security</p>
+                        <p class="skill">MongoDB</p>
+                        <p class="skill">jQuery</p>
                     </div>
                     <p id="someExperienceHeadline" class="minorHeadline"></p>
                     <div id="someExperienceBox" class="skillSection">
+                        <p class="skill">Git</p>
+                        <p class="skill">Wordpress</p>
+                        <p class="skill">Gulp</p>
+                        <p class="skill">Webpack</p>
+                        <p class="skill">Bootstrap</p>
+                        <p class="skill">PostgreSQL</p>
+                        <p class="skill">Babel</p>
+                        <p class="skill">AWS</p>
                     </div>
                 </div>
             </div>
             <div id="rightContainer">
-            
+
             </div>
         </div>
     </div>
@@ -85,12 +116,10 @@
             xhttp.send();
         }
 
-
         // Bit of a weird way to get the language param, but github does not support server side code.
         var url = window.location.href
         if (url.includes("?")) {
             var urlLanguageParam = url.split("?")[1].split("=")[1]
-            console.log(urlLanguageParam)
             if (urlLanguageParam == "dk") {
                 getAndApplyLanguage("danish")
             }
@@ -103,16 +132,17 @@
         }
 
 
-        flagEnglish.addEventListener("click", function() {
-            getAndApplyLanguage('english')
+        flagEnglish.addEventListener("click", function () {
+            getAndApplyLanguage("english")
         })
 
-        flagDanish.addEventListener("click" , function() {
+        flagDanish.addEventListener("click", function () {
             getAndApplyLanguage('danish')
         })
 
-    </script>
 
+
+    </script>
 </body>
 
 </html>
