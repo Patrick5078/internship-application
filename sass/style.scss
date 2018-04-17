@@ -225,9 +225,10 @@ a {
     }
 
     .timelineDescription {
-        max-width: 300px;
+        max-width: 200px;
         a {
-            word-wrap: break-word
+            word-wrap: break-word;
+            max-width: 200px;
         }
     }
 }
