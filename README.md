@@ -1,2 +1,2 @@
 # Internship application
-Because creating it in photoshop or indesign would be too boring
+Because i like coding more than photoshop or indesign
