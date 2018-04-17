@@ -11,7 +11,12 @@
     "bestSkillHeadline" : "Skilled",
     "secondarySkillHeadline" : "Familiar",
     "someExperienceHeadline" : "Some experience",
-    "webDevelopmentEducation": "",
-    "multimediaDesignEducation" : "r",
-    "proGamer": "f"
+    "qualificationHeadline" : "Skills",
+    "timelineHeadline" : "CV Timeline",
+    "webDevelopmentEducationHeadline": "Top-up bachelor in web development",
+    "webDevelopmentEducation": "I’ve been having a blast with this education so far. The topics are challenging and i feel like i have achieved an excellent grasp of what makes a good web developer, now i’m searching for an internship, and i’m really excited to use my knowledge to solve real life problems. ",
+    "multimediaDesignEducationHeadline": "Degree in multimedia design",
+    "multimediaDesignEducation" : "My degree in multimedia design explored many different topics, and it allowed me to find my passion for web development. During this time, i worked mostly with web design and UX, and i did a good amount of front-end development as well.",
+    "proGamingCareerHeadline": "Pro gaming career",
+    "proGamingCareer" : "During this time of my life, i travelled the world and competed in tournaments for the video game “starcraft 2” for a living. This gave me a chance to connect to a wide array of different people, and i learned how to manage myself. If you’re interested, there’s a wiki article about me."
 }

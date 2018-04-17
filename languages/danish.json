@@ -8,7 +8,15 @@
     "descriptionP3": "Jeg har også førhen taget en uddannelse i multimediedesign, så jeg har meget erfaring indenfor web design og UX, Selvom dette ikke skal være fokus for denne praktikperiode.",
     "descriptionP4": "Hvis i tror jeg vil passe godt til jeres firma, eller i ønsker at snakke yderligere, så send venligst en mail eller skriv til mig på linkedin. Tak for opmærksomheden :)",
     "phone" : "Telefon",
-    "bestSkillHeadline" : "Erfaren",
+    "bestSkillHeadline" : "Dygtig",
     "secondarySkillHeadline" : "Bekendt",
-    "someExperienceHeadline" : "Lidt erfaring"
+    "someExperienceHeadline" : "Lidt erfaring",
+    "qualificationHeadline" : "Færdigheder",
+    "timelineHeadline" : "CV Tidslinje",
+    "webDevelopmentEducationHeadline": "Top-up bachelor i webudvikling",
+    "webDevelopmentEducation": "Uddannelsen har været fantastisk indtil videre. Emnerne er udfordrende, og jeg føler jeg har et godt greb om hvad der skal til, for at være en dygtig webudvikler. Ny leder jeg efter en praktikplads, og jeg glæder mig til at bruge min viden til at løse rigtige problemer.",
+    "multimediaDesignEducationHeadline": "Multimediedesign uddannelse",
+    "multimediaDesignEducation" : "Min uddannelse i multimediedesign udforskede mange forskellige emner, og det gav mig muligheden for at finde min interesse for webudvikling. I løbet af uddannelsen, arbejdede jeg mest med web design og UX, og jeg lavede også en god mængde front-end udvikling.",
+    "proGamingCareerHeadline": "Pro gaming karriere",
+    "proGamingCareer" : "I denne periode af mit liv, rejste jeg rundt i verden og levede ved at deltage i turneringer for computerspillet “starcraft 2. Dette gav mig muligheden for at arbejde sammen med mange forskellige mennesker, og lære en masse selvdisciplin. Hvis du er interesseret, er der en wiki article om mig."
 }

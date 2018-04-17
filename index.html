@@ -18,7 +18,7 @@
     <div id="mainContainer">
         <div id="headerContainer">
             <div id="imageContainer">
-                <img src="https://png.pngtree.com/element_pic/00/16/07/155788a15798b81.jpg">
+                <img id="profilePic" src="assets/images/me.jpg">
             </div>
             <div id="headerHeadlines">
                 <h1> Patrick Brix Bjerg </h1>
@@ -54,6 +54,7 @@
         </div>
         <div id="qualificationsContainer">
             <div id="leftContainer">
+                <h2 id ="qualificationHeadline"></h2>
                 <div id="skillBox">
                     <div class="skillSectionWrapper">
                         <p id="bestSkillHeadline" class="minorHeadline"></p>
@@ -88,15 +89,62 @@
                     </div>
                 </div>
             </div>
-            <div id="rightContainer">
-                <div id="timeline">
-                    <p id="date"></p>
+            <div id="cvContainer">
+                <h2 id="timelineHeadline"></h2>
+                <div class="timelineSection">
+
+                    <p id="date" class="timestamp"></p>
+
+
                 </div>
-                <div id="timelineDescription">
-                    <p id="webDevelopmentEducation"></p>
-                    <p id="multimediaDesignEducation"></p>
-                    <p id="proGamer"></p>
+                <div class="timelineSection">
+                    <div class="timelineLeft">
+                        <p class="timestampPlaceholder"></p>
+                        <div class="blueBall"></div>
+                    </div>
+                    <div class="timelineRight">
+                        <div class="timelineDescription">
+                            <p id="webDevelopmentEducationHeadline" class="minorHeadline"></p>
+                            <p id="webDevelopmentEducation"></p>
+                        </div>
+                    </div>
                 </div>
+                <div class="timelineSection">
+                    <div class="timelineLeft">
+                        <p class="timestamp">2017</p>
+                        <div class="blueBall"></div>
+                    </div>
+                    <div class="timelineRight">
+                        <div class="timelineDescription">
+                            <p id="multimediaDesignEducationHeadline" class="minorHeadline"></p>
+                            <p id="multimediaDesignEducation"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timelineSection">
+                    <div class="timelineLeft">
+                        <p class="timestamp">2015</p>
+                        <div class="blueBall"></div>
+                    </div>
+                    <div class="timelineRight">
+                        <div class="timelineDescription">
+                            <p id="proGamingCareerHeadline" class="minorHeadline"></p>
+                            <p id="proGamingCareer"></p>
+                            <a target="blank" href="http://liquipedia.net/starcraft2/Bunny_(Danish_player)"><p>http://liquipedia.net/starcraft2/Bunny_(Danish_player)</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="timelineEnd" class="timelineSection">
+                        <div class="timelineLeft">
+                            <p class="timestamp">2012</p>
+                            <div class="blueBall"></div>
+                        </div>
+                        <div class="timelineRight">
+                            <div class="timelineDescription">
+                             
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
