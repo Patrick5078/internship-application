@@ -175,6 +175,11 @@ a {
     flex-direction: column; }
 
   #links {
-    margin-top: 5px; } }
+    margin-top: 5px; }
+
+  .timelineDescription {
+    max-width: 300px; }
+    .timelineDescription a {
+      word-wrap: break-word; } }
 
 /*# sourceMappingURL=style.css.map */

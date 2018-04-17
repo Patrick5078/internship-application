@@ -223,4 +223,11 @@ a {
     #links {
         margin-top: 5px;
     }
+
+    .timelineDescription {
+        max-width: 300px;
+        a {
+            word-wrap: break-word
+        }
+    }
 }
